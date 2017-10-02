@@ -173,7 +173,7 @@
 
 
         <!--SERVICES-->
-        <section class="white-bg" id="services">
+        <section class="grey-bg" style="padding: 120px 0 0 0" id="services">
           <div class="container">
             <div class="row">
               <div class="col-md-3">
@@ -282,7 +282,7 @@
         <!--/.SERVICES END-->
 
         <!-- MAP -->
-        <section id="about" class="grey-bg">
+        <section id="about" class="white-bg">
           <div class="container">
 <!--
         <div class="col-md-6 col-sm-12 col-xs-12 white-col">
@@ -459,8 +459,10 @@
     
     var map = L.mapbox.map('map', 'mapbox.streets').setView([42.6582, 25.24658], 7);
 
-    L.mapbox.styleLayer('mapbox://styles/bgcameraalert/cj76c8vyl573o2sshtf8i8chv').addTo(map);
 
+
+    L.mapbox.styleLayer('mapbox://styles/bgcameraalert/cj76c8vyl573o2sshtf8i8chv').addTo(map);
+    //map.scrollWheelZoom.disable();
 /*
     var cordinate_data = "https://raw.githubusercontent.com/bgcameraalert/bg_spead_cams/master/map.geojson";
     $.getJSON(cordinate_data, function(data) {
