@@ -53,11 +53,11 @@
     <!--HEADER -->
     <div class="header">
       <div class="for-sticky">
-        <!--LOGO
+        <!--LOGO -->
         <div class="col-md-2 col-xs-6 logo">
-          <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
+          <!-- <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a> -->
         </div>
-        /.LOGO END-->
+        <!--/.LOGO END-->
       </div>
 
       <div class="menu-wrap">
@@ -129,7 +129,7 @@
   <div id="wrap">
   <div id="regbar">
     <div id="navthing">
-      <h4><a href="#" id="loginform" style="color: #ffffff;">Login</a> | <a href="#" id="logoutform" style="color: #000000;">Log Out</a></h4>
+      <h4><a href="#" id="loginform" style="color: #ffffff;">LogIn</a> | <a href="#" id="logoutform" style="color: #000000;">LogOut</a></h4>
     <div class="login">
       <div class="arrow-up"></div>
       <div class="formholder">
@@ -309,7 +309,7 @@
 
 
         <!--WORK-->
-        <section class="white-bg mar-tm-10" id="work">
+        <section class="grey-bg mar-tm-10" id="work">
           <div class="container">
             <div class="row">
               <div class="col-md-3">
@@ -456,8 +456,10 @@
     	}
     	layer.bindPopup(popupContent);
     }
-    
-    var map = L.mapbox.map('map', 'mapbox.streets').setView([42.6582, 25.24658], 7);
+    var options = {
+  minZoom: 8
+};
+    var map = L.mapbox.map('map', 'mapbox.streets', options).setView([42.6582, 25.24658], 7);
 
 
 
