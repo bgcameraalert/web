@@ -130,6 +130,9 @@
                        <input type="email" value="example@example.com" />
                        <label name="password">Password</label>
                        <input type="password" />
+                       <div style="text-align: right;">
+                           <span name="reset-pass"><a href="#" id="reset-pass">Reset password.</a></span>
+                       </div>
                        <input type="submit" value="Login" />
                      </fieldset>
                   </div>
@@ -410,5 +413,18 @@
     <script src="js/index.js"></script>
     <script src="js/map.js"></script>
     <script src="js/tawk.js"></script>
+
+<script>
+
+
+    function sendPasswordReset() {
+        // [START_EXCLUDE]
+        alert('Password Reset Email Sent!');
+      // [END sendpasswordemail];
+    }
+      document.getElementById('reset-pass').addEventListener('click', sendPasswordReset, false);
+</script>
+
+
   </body>
 </html>
