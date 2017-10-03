@@ -126,6 +126,8 @@
                 <div class="formholder">
                   <div class="randompad">
                      <fieldset>
+                       <label name="username">User</label>
+                       <input type="username" value="Username" />
                        <label name="email">Email</label>
                        <input type="email" value="example@example.com" />
                        <label name="password">Password</label>
@@ -415,10 +417,9 @@
     <script src="js/tawk.js"></script>
 
 <script>
-
-
     function sendPasswordReset() {
         // [START_EXCLUDE]
+$(".login").hide();
         alert('Password Reset Email Sent!');
       // [END sendpasswordemail];
     }
